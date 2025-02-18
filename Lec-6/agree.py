@@ -1,8 +1,12 @@
+# Prompt the user for input and convert it to lowercase
 s = input("Do you agree? ").lower()
 
-if s == "yes" or "y":
+# Check if the input is "yes" or "y"
+if s == "yes" or s == "y":
+	# If the input is "yes" or "y", print "Agreed"
 	print("Agreed")
 
-elif s == "no" or "n":
-	print("Not Agreen")
-
+# Check if the input is "no" or "n"
+elif s == "no" or s == "n":
+	# If the input is "no" or "n", print "Not Agreed"
+	print("Not Agreed")
