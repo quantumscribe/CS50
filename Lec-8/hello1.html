@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 
-<!--Demonstrate onsubmit-->
+<!-- Demonstrate onsubmit -->
 
 <html lang="en">
 	<head>
 		<script>
+			// Function to greet the user with an alert
 			function greet() {
-				alert('hello,' + document.querySelector('name').value)
+				// Get the value of the input field with id 'name' and display it in an alert
+				alert('hello,' + document.querySelector('#name').value)
 			}
 		</script>
 
@@ -14,13 +16,16 @@
 	</head>
 
 	<body>
-		<form onsubmit="greeet(); return false;">
+		<!-- Form that calls the greet function on submit and prevents the default form submission -->
+		<form onsubmit="greet(); return false;">
+			<!-- Input field for the user's name -->
 			<input
 				autocomplete="off"
 				autofocus
 				id="name"
 				placeholder="Name"
 				type="text" />
+			<!-- Submit button for the form -->
 			<input type="submit" />
 		</form>
 	</body>

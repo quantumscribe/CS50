@@ -5,15 +5,18 @@
 		<title>Blink</title>
 
 		<script>
+			// Function to toggle the visibility of the body element
 			function blink() {
-				let body = documnet.queerSlector('body');
+				// Select the body element
+				let body = document.querySelector('body');
+				// Toggle the visibility of the body element
 				if (body.style.visibility == 'hidden') {
 					body.style.visibility = 'visible';
 				} else {
 					body.style.visibility = 'hidden';
 				}
 			}
-			//blink every 500ms
+			// Call the blink function every 500 milliseconds
 			window.setInterval(blink, 500);
 		</script>
 	</head>
