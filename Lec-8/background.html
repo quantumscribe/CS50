@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="en">
 	<head>
 		<title>Background</title>
 	</head>
-
 	<body>
+		<!-- Buttons to change the background color -->
 		<button id="red">R</button>
 		<button id="green">G</button>
 		<button id="blue">B</button>
 
 		<script>
+			// Select the body element
 			let body = document.querySelector('body')
+
+			// Add event listener to the red button to change background color to red
 			document
 				.querySelector('#red')
 				.addEventListener('click', function () {
 					body.style.backgroundColor = 'red'
 				})
 
+			// Add event listener to the green button to change background color to green
 			document
 				.querySelector('#green')
 				.addEventListener('click', function () {
 					body.style.backgroundColor = 'green'
 				})
 
+			// Add event listener to the blue button to change background color to blue
 			document
 				.querySelector('#blue')
 				.addEventListener('click', function () {
